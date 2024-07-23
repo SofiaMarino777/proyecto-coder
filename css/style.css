@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body {
+    font-family: 'Open-sans', sans-serif ;
+    background-color: #c1e5f3;
+    color:black;
+}
+
+h1{
+    font-family: 'Cinzel', serif;
+    text-align: center;
+}
+
+a{  
+    color: black;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+    background-color: rgb(172, 245, 221);
+    line-height: 1.5em;
+    border-radius: 20px;
+    
+}
+
+ul{
+    list-style: none;
+}
+
+nav img{
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+
+footer{
+    height: 300px;
+    padding: 15px;
+}
