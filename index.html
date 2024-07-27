@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <title>Moonlight | Music Entertainment</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <!-- barra de navegacion  -->
@@ -32,19 +38,97 @@
     </header>
     <!-- comienzo de main -->
     <main>
-        <section class="carrusel">
+        <section>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/coldplay.jfif" class="d-block w-100" alt="Coldplay">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/pastillas-abuelo.jfif" class="d-block w-100" alt="las pastillas del abuelo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ciro-los-persas.jfif" class="d-block w-100" alt="Ciro y los persas">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/paulmccartneygotbacktour.jpg" class="d-block w-100" alt="paul mccartney">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!-- <section class="carrusel">
             <div class="container-artistas card">
                 <img src="img/coldplay.jfif" alt="Coldplay">
                 <img src="img/ciro-los-persas.jfif" alt="Ciro y los persas">
                 <img src="img/pastillas-abuelo.jfif" alt="las pastillas del abuelo">
                 <img src="img/paulmccartneygotbacktour.jpg" alt="paul mccartney">
             </div>
-        </section>
+        </section> -->
         <section>
             <h1>Bienvenidos a la diversion.</h1>
-    
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat debitis quasi earum praesentium laudantium dolores!
+
+            <p>
+                Somos la nueva industria de entretenimientos masivos.
             </p>
+            <p>
+                Todos los espectaculos a los que queres asistir de tus artistas favoritos, se encuentran aca.
+            </p>
+        </section>
+
+        <section>
+            <h2>Proximos eventos</h2>
+            <div class="card__container">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/coldplay.jfif" class="card-img-top" alt=" Concierto Coldplay">
+                    <div class="card-body">
+                        <h5 class="card-title">Coldplay en concierto</h5>
+                        <p class="card-text">Disfruta de Coldplay en concierto, en Buenos Aires el 5, 7 y 12 de Octubre,
+                            Estadio River Plate.</p>
+                        <p class="card-text">Tus Entradas adquiralas aca:</p>
+                        <a href="#" class="btn btn-primary">Ir a Comprar Entradas</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/ciro-los-persas.jfif" class="card-img-top" alt="concierto Ciro y los persas">
+                    <div class="card-body">
+                        <h5 class="card-title">Ciro y los Persas</h5>
+                        <p class="card-text">Veni a disfrutar de la banda sinonimo de rock nacional.</p>
+                        <p class="card-text">Se presentan en el Movistar Arena, el 11 de Noviembre, y vos no te lo podes
+                            perder.</p>
+                        <a href="#" class="btn btn-primary">Ir a Comprar Entradas</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/paulmccartneygotbacktour.jpg" class="card-img-top" alt="Concierto Paul">
+                    <div class="card-body">
+                        <h5 class="card-title">Paul McCartney</h5>
+                        <p class="card-text">El idolo mundial, regresa a la Argentina, en un show exclusivo que vos no
+                            te podes perder.</p>
+                        <p class="card-text">Compra ya tu entrada, antes de que se agoten</p>
+                        <a href="#" class="btn btn-primary">Ir a Comprar Entradas</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="img/pastillas-abuelo.jfif" class="card-img-top" alt="Concierto pastillas del abuelo">
+                    <div class="card-body">
+                        <h5 class="card-title">Las Pastillas del Abuelo</h5>
+                        <p class="card-text">En la presentacion de su nuevo disco "2020", estan de regreso por Buenos
+                            Aires.</p>
+                        <p class="card-text">Y vos tenes que estar ahi</p>
+                        <a href="#" class="btn btn-primary">Ir a Comprar Entradas</a>
+                    </div>
+                </div>
+            </div>
         </section>
         <section>
             <h2>Nuestros colaboradores</h2>
@@ -59,11 +143,30 @@
         </section>
     </main>
     <footer>
-        <a href="facebook.com">Facebook</a>
-        <a href="instagram.com">Instagram</a>
-        <a href="twitter.com">Twitter</a>
-        <a href="wathsapp.com">Whatsapp</a>
-        <a href="youtube.com">YouTube</a>
+        <ul>
+            <li>
+                <a href="facebook.com">Facebook</a>
+            </li>
+            <li>
+                <a href="instagram.com">Instagram</a>
+            </li>
+            <li>
+                <a href="twitter.com">Twitter</a>
+            </li>
+            <li>
+                <a href="wathsapp.com">Whatsapp</a>
+            </li>
+            <li>
+                <a href="youtube.com">YouTube</a>
+            </li>
+        </ul>
+        <p>&#169 Todos los derechos reservados.</p>
     </footer>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
