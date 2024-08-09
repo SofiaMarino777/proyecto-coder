@@ -9,6 +9,16 @@
     font-family: 'AcuminSemiBold';
     src: url(../font/fonnts.com-AcuminPro-Semibold.ttf);
 }
+@media (width <= 599px) {
+    .nav-bar ul, footer ul{
+        flex-flow: column;
+        align-items: start;
+        gap: 6px;
+    }
+    footer p{
+        align-items: center;
+    }
+}
 
 .navbar-toggler{
     display: flex;
@@ -88,8 +98,9 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 15px;
+    gap: 15px;
 }
 
 
@@ -100,6 +111,8 @@ img {
     border: 1px solid antiquewhite;
     width: 300px;
     background-color: black;
+    padding: 5px;
+    border-radius: 3px;
 }
 .carousel-inner{
     display: flex;
