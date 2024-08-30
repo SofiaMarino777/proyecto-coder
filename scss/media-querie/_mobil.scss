@@ -1,0 +1,10 @@
+@media (width <= 599px) {
+    .nav-bar ul, footer ul{
+        flex-flow: column;
+        align-items: start;
+        gap: 6px;
+    }
+    footer p{
+        align-items: center;
+    }
+}
